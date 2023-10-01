@@ -1,0 +1,66 @@
+.container {
+    margin: 0 auto;
+    max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+h1 {
+    text-align: center;
+    color: blue;
+}
+.puzzle-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+.puzzle-piece {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.puzzle-piece img {
+    max-width: 100%;
+}
+#puzzle-board {
+    width: 450px;
+    height: 300px;
+    border: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("nkarner/all.jpg");
+    background-size: contain;
+    position: relative;
+}
+#puzzle-board::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#puzzle-board img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+}
+#reset-button {
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+button:hover{
+    opacity: 0.5;
+    background-color: rgb(155, 155, 228);
+}
